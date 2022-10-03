@@ -1,0 +1,116 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 1.4rem 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body{
+    background: url(./img/background.jpg) no-repeat center top;
+}
+
+header, footer{
+    padding: 3px 0;
+    background-image: linear-gradient(rgb(0, 72, 34), rgb(0, 78, 36));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-size: 1.5em;
+}
+
+.text{
+    width: 400px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.text-obj{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.text-obj ul{
+    margin: auto;
+}
+
+.text-obj li{
+    margin: 5px 0;
+    list-style-type: circle;
+    border-bottom: 1px dotted;
+}
+
+.border_left{
+    border-left: 1px solid;
+}
+
+.descricao{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.justificativa{
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.724);
+    color: rgb(32, 103, 32);
+    border-radius: 15px;
+}
+
+.bmc{
+    width: 100%;
+    border: 1px solid;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.escopo-produto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.telas{
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.equipe{
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid;
+    width: 600px;
+    border-radius: 5px;
+    margin: 25px 0;
+}
+
+.integrantes{
+    margin: 25px 0;
+    width: 50%;
+    text-align: center;
+}
+
+.integrantes p{
+    font-size: 16px;
+    margin: 3px;
+}
