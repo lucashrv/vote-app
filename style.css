@@ -14,11 +14,11 @@ body{
 }
 
 header, footer{
-    padding: 3px 0;
     background-image: linear-gradient(rgb(0, 72, 34), rgb(0, 78, 36));
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 60px;
 }
 
 section{
@@ -29,6 +29,16 @@ section{
 
 .logo{
     font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.logo span{
+    margin: 0 10px;
+}
+
+.github{
+    height: 32px;
 }
 
 .text{
@@ -40,21 +50,16 @@ section{
 }
 
 .text-obj{
-    width: 700px;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    width: 100%;
+    width: 1030px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.text-obj ul{
-    margin: auto;
-}
-
-.text-obj li{
-    margin: 5px 0;
-    list-style-type: circle;
-    border-bottom: 1px dotted;
+.text-obj p{
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.221);
 }
 
 .border_left{
@@ -70,16 +75,15 @@ section{
 
 .justificativa{
     height: 300px;
-    background-color: rgba(255, 255, 255, 0.724);
+    background-color: rgba(255, 255, 255, 0.833);
     color: rgb(32, 103, 32);
     border-radius: 15px;
 }
 
 .bmc{
     width: 100%;
-    border: 1px solid;
     text-align: center;
-    margin: 25px 0;
+    margin: 30px 0;
 }
 
 .escopo-produto{
@@ -89,17 +93,40 @@ section{
 }
 
 .telas{
-    border: 1px solid;
+    width: 100%;
+}
+
+.escopo-projeto{
+    width: 1030px;
+    background-color: rgba(255, 255, 255, 0.941);
+    margin: 50px 0;
+    height: 400px;
+    text-align: center;
+}
+
+.escopo-projeto p{
+    color: black;
+    font-size: 2em;
+}
+
+.react{
+    margin: 20px 0;
+}
+
+.react img{
+    width: 300px;
+}
+
+.titulo-equipe{
     width: 100%;
     text-align: center;
-    margin: 25px 0;
 }
 
 .equipe{
     display: flex;
     flex-wrap: wrap;
     border: 3px solid;
-    width: 600px;
+    width: 700px;
     border-radius: 5px;
     margin: 25px 0;
 }
