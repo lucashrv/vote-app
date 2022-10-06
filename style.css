@@ -14,11 +14,11 @@ body{
 }
 
 header, footer{
-    background-image: linear-gradient(rgb(0, 72, 34), rgb(0, 78, 36));
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
+    width: 100%;
 }
 
 section{
@@ -50,7 +50,7 @@ section{
 }
 
 .text-obj{
-    width: 1030px;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
 }
@@ -59,7 +59,6 @@ section{
     display: inline-block;
     margin: 10px 0;
     font-size: 25px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.221);
 }
 
 .border_left{
@@ -86,6 +85,10 @@ section{
     margin: 30px 0;
 }
 
+.bmc img{
+    width: 80%;
+}
+
 .escopo-produto{
     width: 100%;
     display: flex;
@@ -98,23 +101,22 @@ section{
 
 .escopo-projeto{
     width: 1030px;
-    background-color: rgba(255, 255, 255, 0.941);
     margin: 50px 0;
-    height: 400px;
+    padding: 50px 0;
     text-align: center;
 }
 
-.escopo-projeto p{
-    color: black;
-    font-size: 2em;
+.logos img{
+    height: 100px;
 }
 
-.react{
-    margin: 20px 0;
+#htmlcss, #sql{
+    height: 120px;
 }
 
-.react img{
-    width: 300px;
+#ionic{
+    height: 70px;
+    margin-bottom: 15px;
 }
 
 .titulo-equipe{
@@ -125,9 +127,7 @@ section{
 .equipe{
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid;
     width: 700px;
-    border-radius: 5px;
     margin: 25px 0;
 }
 
@@ -137,7 +137,85 @@ section{
     text-align: center;
 }
 
+.integrantes img{
+    width: 100px;
+    height: 120px;
+    border: 3px solid;
+    border-radius: 50%;
+}
+
 .integrantes p{
-    font-size: 16px;
+    font-size: 18px;
     margin: 3px;
 }
+
+
+/* Media Queries and Breakpoints */
+@media (max-width: 575.98px) {
+    .text, .text-obj p{
+        font-size: 16px;
+    }
+    .justificativa{
+        height: 200px;
+        width: 260px;
+        margin-top: 25px;
+    }
+    .descricao{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .logos img{
+        height: 70px;
+    }
+    #htmlcss, #sql{
+        height: 90px;
+    }
+    #ionic{
+        height: 40px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .text, .text-obj p{
+        font-size: 20px;
+    }
+    .text-obj{
+        font-size: 1em;
+    }
+    .justificativa{
+        height: 220px;
+        width: 280px;
+        margin-top: 30px;
+    }
+    .descricao{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logos img{
+        height: 70px;
+    }
+    #htmlcss, #sql{
+        height: 90px;
+    }
+    #ionic{
+        height: 40px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .text{
+        font-size: 1.1rem;
+    }
+    .justificativa{
+        height: 240px;
+        width: 300px;
+    }
+    .escopo-produto{
+        font-size: 20px;
+    }
+ }
